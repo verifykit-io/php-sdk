@@ -1,0 +1,65 @@
+{
+    "name": "verifykit/sdk",
+    "description": "Official PHP SDK for VerifyKit - Email validation and verification API",
+    "type": "library",
+    "keywords": [
+        "email",
+        "validation",
+        "verification",
+        "validator",
+        "email-validation",
+        "email-verification",
+        "verifykit",
+        "api",
+        "sdk",
+        "php"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuno Miguel Duarte",
+            "email": "nuno.msde@gmail.com"
+        }
+    ],
+    "homepage": "https://verifykit.io",
+    "support": {
+        "email": "support@verifykit.io",
+        "issues": "https://github.com/verifykit/verifykit/issues",
+        "docs": "https://verifykit.io/docs"
+    },
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-json": "*",
+        "ext-filter": "*"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "VerifyKit\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "VerifyKit\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "pest",
+        "test:coverage": "pest --coverage",
+        "analyse": "phpstan analyse src --level=max",
+        "format": "php-cs-fixer fix src",
+        "format:check": "php-cs-fixer fix src --dry-run --diff"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

@@ -1,0 +1,11 @@
+parameters:
+    level: max
+    paths:
+        - src
+
+    # Ignore specific error identifiers
+    ignoreErrors:
+        -
+            identifier: missingType.iterableValue
+        -
+            message: '#Variable \$http_response_header#'

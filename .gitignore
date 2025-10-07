@@ -1,0 +1,29 @@
+# Composer
+/vendor/
+composer.lock
+
+# PHPUnit / Pest
+.phpunit.result.cache
+.phpunit.cache
+coverage/
+.pest/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+build/
+dist/
+
+# Logs
+*.log
