@@ -1,5 +1,5 @@
 {
-    "name": "verifykit/sdk",
+    "name": "verifykit-io/php-sdk",
     "description": "Official PHP SDK for VerifyKit - Email validation and verification API",
     "type": "library",
     "keywords": [
@@ -24,7 +24,7 @@
     "homepage": "https://verifykit.io",
     "support": {
         "email": "support@verifykit.io",
-        "issues": "https://github.com/verifykit/verifykit/issues",
+        "issues": "https://github.com/verifykit-io/php-sdk/issues",
         "docs": "https://verifykit.io/docs"
     },
     "require": {
